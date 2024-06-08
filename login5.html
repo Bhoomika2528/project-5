@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<script>
+function loginValidation(){
+   var uname=document.myform.username.value;
+   var password=document.myform.password.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if(password.length<6){
+               alert("Password Must be 6 letters");
+               return false;
+        }
+        return true;
+    }
+</script>
+
+<body>
+   
+    <div class="container">
+        <h2>Login</h2>
+        <form name="myform"  action="video.html" onsubmit="return loginValidation(this)">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            
+            <p>Don't have an account? <a href="reg5.html">Register here</a></p>
+        </form>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

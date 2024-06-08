@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eae7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("ice.jpg");
+
+}    
+    /*  Smart phone      */
+    
+    @media screen and (min-width:320px )  {
+body{
+
+ background-image: url("ice.jpg")
+}
+    }
+
+/*  Tablet,ipad      */    
+
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+ background-image: url("ice.jpg");
+}
+}
+
+/* Desktops and Laptops asfsdf     */    
+
+@media Screen and (min-width:1224px) {
+body {
+ background-image: url("ice.jpg");
+}
+}
+
+/* Large Screens---------  */
+@media Screen and (min-width:1824px) {
+body {
+ background-image: url("ice.jpg");
+}
+}
+
+
+
+
+.container {
+    background-color: rgb(97, 85, 85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(36, 65, 39, 0.1);
+    width: 300px;
+    
+        width: 500px;
+        height: 350px;
+        box-shadow: 10px 10px 10px rgb(210, 156, 156), 10px 10px 20px rgb(127, 127, 114) ;
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+   
+        text-shadow: 50px 50px 100px red,10px 10px 20px yellow;
+    
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
